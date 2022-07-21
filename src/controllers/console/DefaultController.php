@@ -2,9 +2,9 @@
 
 namespace portalium\template\controllers\console;
 
-use portalium\web\Controller as WebController;
+use portalium\console\Controller as ConsoleController;
 
-class DefaultController extends WebController
+class DefaultController extends ConsoleController
 {
     public function actionIndex()
     {
