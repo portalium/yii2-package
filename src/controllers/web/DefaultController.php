@@ -1,6 +1,6 @@
 <?php
 
-namespace portalium\template\controllers\backend;
+namespace portalium\template\controllers\web;
 
 use portalium\web\Controller as WebController;
 
