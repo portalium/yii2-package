@@ -2,6 +2,9 @@
 
 namespace portalium\template;
 
+use portalium\base\Event;
+use portalium\package\components\TriggerActions;
+
 class Module extends \portalium\base\Module
 {
     public $apiRules = [
@@ -23,5 +26,10 @@ class Module extends \portalium\base\Module
     public static function t($message, array $params = [])
     {
         return parent::coreT('template', $message, $params);
+    }
+
+    public function registerEvents()
+    {
+        Event::on($this::className(), UserModule::EVENT_USER_DELETE_BEFORE, [new TriggerActions(), 'onUserDeleteBefore']);
     }
 }
