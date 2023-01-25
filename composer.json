@@ -1,7 +1,7 @@
 {
-	"name" : "portalium/portalium-template",
-	"description" : "Module Template for Portalium",
-	"type" : "yii2-extension",
+	"name" : "{{vendor}}/portalium-template",
+	"description" : "Module {{module}} for Portalium",
+	"type" : "portalium-module",
 	"license": "MIT",
 	"homepage" : "https://portalium.dev",
 	"authors" : [
@@ -12,11 +12,11 @@
 		}
 	],
 	"support" : {
-		"issues" : "https://github.com/portalium/portalium-template/issues"
+		"issues" : "https://github.com/{{vendor}}/portalium-{{module}}/issues"
 	},
 	"autoload" : {
 		"psr-4" : {
-			"portalium\\template\\" : "src/"
+			"{{diginova}}\\{{module}}\\" : "src/"
 		}
 	}
 }
