@@ -1,5 +1,5 @@
 {
-	"name" : "{{vendor}}/portalium-template",
+	"name" : "{{vendor}}/portalium-{{module}}",
 	"description" : "Module {{module}} for Portalium",
 	"type" : "portalium-module",
 	"license": "MIT",
