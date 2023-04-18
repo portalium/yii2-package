@@ -1,41 +1,43 @@
 <?php
 
-namespace {{vendor}}\{{module}};
+namespace {{vendor}}\{{package}};
 
 use portalium\base\Event;
-use {{vendor}}\{{module}}\components\TriggerActions;
+use {{vendor}}\{{package}}\components\TriggerActions;
 
 class Module extends \portalium\base\Module
 {
-    public static $tablePrefix = '{{module}}_';
+    public static $tablePrefix = '{{package}}_';
     
-    public static $name = '{{module}}';
+    public static $name = '{{package}}';
 
-    public static $description = '{{module}} Module';
+    public static $description = '{{package}} Module';
 
     public $apiRules = [
         [
             'class' => 'yii\rest\UrlRule',
             'controller' => [
-                '{{module}}/default',
+                '{{package}}/default',
             ]
         ],
     ];
     
     public static function moduleInit()
     {
-        self::registerTranslation('{{module}}','@{{vendor}}/{{module}}/messages',[
-            '{{module}}' => '{{module}}.php',
+        self::registerTranslation('{{package}}','@{{vendor}}/{{package}}/messages',[
+            '{{package}}' => '{{package}}.php',
         ]);
     }
 
     public static function t($message, array $params = [])
     {
-        return parent::coreT('{{module}}', $message, $params);
+        return parent::coreT('{{package}}', $message, $params);
     }
 
-    /* public function registerEvents()
-    {
-        Event::on($this::className(), UserModule::EVENT_USER_DELETE_BEFORE, [new TriggerActions(), 'onUserDeleteBefore']);
-    } */
+    /* 
+        public function registerEvents()
+        {
+            Event::on($this::className(), UserModule::EVENT_USER_DELETE_BEFORE, [new TriggerActions(), 'onUserDeleteBefore']);
+        } 
+    */
 }

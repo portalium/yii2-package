@@ -1,6 +1,6 @@
 {
-	"name" : "{{vendor}}/portalium-{{module}}",
-	"description" : "Module {{module}} for Portalium",
+	"name" : "{{vendor}}/portalium-{{package}}",
+	"description" : "Module {{package}} for Portalium",
 	"type" : "portalium-module",
 	"license": "MIT",
 	"homepage" : "https://portalium.dev",
@@ -12,11 +12,11 @@
 		}
 	],
 	"support" : {
-		"issues" : "https://github.com/{{vendor}}/portalium-{{module}}/issues"
+		"issues" : "https://github.com/{{vendor}}/portalium-{{package}}/issues"
 	},
 	"autoload" : {
 		"psr-4" : {
-			"{{vendor}}\\{{module}}\\" : "src/"
+			"{{vendor}}\\{{package}}\\" : "src/"
 		}
 	}
 }
