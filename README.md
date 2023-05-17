@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://github.com/portalium" target="_blank">
-        <img src="https://raw.githubusercontent.com/demirmehmet0/portalium-efe/main/portalium_logo.png" height="100px">
+        <img src="./portalium_logo.png" height="100px">
     </a>
     <h1 align="center">Portalium _____</h1>
     <br>
@@ -52,6 +52,18 @@ The package is tested with [PHPUnit](https://phpunit.de/). To run tests:
 
 Use [ComposerRequireChecker](https://github.com/maglnet/ComposerRequireChecker) to detect transitive 
 [Composer](https://getcomposer.org/) dependencies.
+
+## Package development
+
+Once you have created your package, you can create the components, controllers, models, database migrations, and views within the package.
+
+Here are some links with more information about components, controllers, models, database migrations, and views:
+
+- [Creating a component](https://www.yiiframework.com/doc/guide/2.0/en/concept-components)
+- [Creating a controller](https://www.yiiframework.com/doc/guide/2.0/en/structure-controllers)
+- [Creating a model](https://www.yiiframework.com/doc/guide/2.0/en/structure-models)
+- [Creating a database migration](https://www.yiiframework.com/doc/guide/2.0/en/db-migrations)
+- [Creating a view](https://www.yiiframework.com/doc/guide/2.0/en/structure-views)
 
 ## License
 
