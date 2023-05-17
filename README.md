@@ -28,13 +28,13 @@ composer require portalium/_____
 
 ### Widgets:
 
-- [_____](docs/widgets/_____.md)
+- [Example Widget](docs/widgets/widget.md)
 - [_____](docs/widgets/_____.md)
 - [_____](docs/widgets/_____.md)
 
 ### Components
 
-- [_____](docs/components/_____.md)
+- [Example Component](docs/components/component.md)
 - [_____](docs/components/_____.md)
 - [_____](docs/components/_____.md)
 
